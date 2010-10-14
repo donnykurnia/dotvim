@@ -1,43 +1,74 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" vimrc File
+" by Donny Kurnia
+" donnykurnia@gmail.com
+" Get the latest update from http://github.com/donnykurnia/dotvim.git
 
+" Load Pathogen
+filetype off
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
+" Enable filetype
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
+" Color Scheme
+colorscheme vividchalk
+
+" Write the old file out when switching between files.
+set autowrite
+
+" Switch between buffers without saving
 set hidden
-set number
+
+" Indentation
+set autoindent
+set smartindent
+
+" Tab setting
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-syntax on
+set expandtab
+set smarttab
 
-if has("autocmd")
-  filetype plugin indent on
-endif
+" Display current cursor position in lower right corner.
+set ruler
 
-colorscheme zenburn
+" Show line number
+set number
 
-if &cp | set nocp | endif
-let s:cpo_save=&cpo
-set cpo&vim
-map! <S-Insert> <MiddleMouse>
-nmap gx <Plug>NetrwBrowseX
-nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
-map <S-Insert> <MiddleMouse>
-let &cpo=s:cpo_save
-unlet s:cpo_save
+" Visual help
+set showmatch
+set nowrap
+set vb t_vb=
+set virtualedit=insert
 
-set autoindent
-set background=dark
-set backspace=indent,eol,start
+" Search preference
+set incsearch
+set hls
+
+" Enable code folding
+set foldenable
+
+" Set file encoding, font type and size
 set fileencodings=ucs-bom,utf-8,default,latin1
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 8
-set helplang=en
-set history=500
-set nomodeline
-set mouse=a
-set printoptions=paper:letter
-set ruler
-set runtimepath=~/.vim,/var/lib/vim/addons,/usr/share/vim/vimfiles,/usr/share/vim/vim72,/usr/share/vim/vimfiles/after,/var/lib/vim/addons/after,~/.vim/after
-set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set termencoding=utf-8
-set window=53
 
+" Set undo number
+set history=500
+
+" Set language and print option
+set helplang=en
+set printoptions=paper:a4
+
+" Hide gVim toolbar by default
+set go-=T
+
+" Better line wrapping 
+set textwidth=79
+set formatoptions=qrn1
 
