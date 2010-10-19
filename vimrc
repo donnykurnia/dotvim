@@ -43,6 +43,8 @@ set smarttab
 
 " Display current cursor position in lower right corner.
 set ruler
+" Display fugitive status
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Show line number
 set number
