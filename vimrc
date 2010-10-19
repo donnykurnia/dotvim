@@ -10,6 +10,8 @@ call pathogen#runtime_append_all_bundles()
 
 " CakePHP
 if has("autocmd")
+  au FileType php set ft=php.cakephp
+  autocmd BufRead,BufNewFile *.ctp set filetype=php
   autocmd BufEnter *.ctp set syn=php
 endif
 
