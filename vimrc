@@ -8,6 +8,11 @@ filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" CakePHP
+if has("autocmd")
+  autocmd BufEnter *.ctp set syn=php
+endif
+
 " Enable filetype
 filetype on
 filetype plugin on
@@ -71,4 +76,5 @@ set go-=T
 " Better line wrapping 
 set textwidth=79
 set formatoptions=qrn1
+
 
