@@ -49,3 +49,6 @@
 [submodule "bundle/textobj-rubyblock"]
 	path = bundle/textobj-rubyblock
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "bundle/sparkup.git"]
+	path = bundle/sparkup.git
+	url = git://github.com/rstacruz/sparkup.git
