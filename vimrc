@@ -78,7 +78,7 @@ set printoptions=paper:a4
 set go-=T
 
 " Better line wrapping 
-set textwidth=79
+set textwidth=72
 set formatoptions=qrn1
 
 

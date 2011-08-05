@@ -58,3 +58,6 @@
 [submodule "bundle/symfony"]
 	path = bundle/symfony
 	url = git://github.com/geoffrey/vim-symfony.git
+[submodule "bundle/simplenote"]
+	path = bundle/simplenote
+	url = git://github.com/mrtazz/simplenote.vim.git
