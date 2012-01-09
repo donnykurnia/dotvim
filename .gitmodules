@@ -55,9 +55,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "bundle/symfony"]
-	path = bundle/symfony
-	url = git://github.com/geoffrey/vim-symfony.git
 [submodule "bundle/simplenote"]
 	path = bundle/simplenote
 	url = git://github.com/mrtazz/simplenote.vim.git
