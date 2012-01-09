@@ -19,10 +19,12 @@ endif
 filetype on
 filetype plugin on
 filetype indent on
-syntax on
+syntax enable
+set background=dark
 
 " Color Scheme
-colorscheme vividchalk
+let g:solarized_termtrans=1
+colorscheme solarized
 
 " Write the old file out when switching between files.
 set autowrite
@@ -61,6 +63,7 @@ set hls
 
 " Enable code folding
 set foldenable
+" set foldmethod=indent
 
 " Set file encoding, font type and size
 set fileencodings=ucs-bom,utf-8,default,latin1
