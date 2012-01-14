@@ -7,6 +7,7 @@
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " CakePHP
 if has("autocmd")
@@ -24,7 +25,9 @@ set background=dark
 
 " Color Scheme
 let g:solarized_termtrans=1
+let g:solarized_termcolors=16
 colorscheme solarized
+"colorscheme vividchalk
 
 " Write the old file out when switching between files.
 set autowrite
