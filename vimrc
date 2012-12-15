@@ -87,5 +87,5 @@ set go-=T
 set textwidth=72
 set formatoptions=qrn1
 
-source ~/.simplenoterc
+" source ~/.simplenoterc
 
